@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import uuid from 'uuid';
-
 import {
     Button, Form, FormGroup, Label, Input, Col, Row, Card, CardTitle, CardBody
 } from 'reactstrap';
 
+import TodoList from './TodoList';
+
 class TodoInput extends Component {
     state = {
+        id: "",
         title: "",
         desc: "",
         date: ""
@@ -26,7 +28,15 @@ class TodoInput extends Component {
             desc: this.state.desc,
             date: this.state.date
         }
-        console.log(newTodo);
+
+        this.setState({
+            id: newTodo.id,
+            title: newTodo.title,
+            desc: newTodo.desc,
+            date: newTodo.date
+        });
+
+        console.log(this.state)
     }
 
     render() {
