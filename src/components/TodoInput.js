@@ -17,17 +17,6 @@ class TodoInput extends Component {
         this.setState({ [e.target.name]: e.target.value });
     }
 
-    onChangeDate = (e) => {
-        console.log(e.target.value);
-        this.setState({ [e.target.name]: e.target.value });
-    }
-
-
-    onChangeDesc = (e) => {
-        console.log(e.target.value);
-        this.setState({ [e.target.name]: e.target.value });
-    }
-
     onSubmit = (e) => {
         e.preventDefault();
 
