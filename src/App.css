@@ -6,14 +6,40 @@
     top: 4em;
     padding: 2em;
     margin: 6em 10em 1em 10em;
+    transition: transform .2s; /* Animation */
 }
+.inputCard:hover {
+    transform: scale(1.05); 
+  }
 
 .todoListCard {
     padding: 2em;
     margin: 2em 10em 2em 10em;
 }
 
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .todoItemCard {
+    height: 20em;
+    width: 20em;
     padding: 2em;
-    margin: 2em 10em 2em 10em;
+    margin: 2em 2em 2em 2em;
+    transition: transform .2s; /* Animation */
+}
+
+.todoItemCard:hover {
+    transform: scale(1.05);
+}
+
+.remove-btn {
+    width: 5em;
+}
+
+.clear-btn {
+    width: 10em;
 }

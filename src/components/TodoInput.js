@@ -11,13 +11,14 @@ class TodoInput extends Component {
         id: "",
         title: "",
         desc: "",
-        date: ""
+        date: "",
+        status: ""
     }
 
     onChange = (e) => {
         console.log(e.target.value);
         this.setState({ [e.target.name]: e.target.value });
-    }
+    };
 
     onSubmit = (e) => {
         e.preventDefault();
@@ -26,18 +27,13 @@ class TodoInput extends Component {
             id: uuid(),
             title: this.state.title,
             desc: this.state.desc,
-            date: this.state.date
+            date: this.state.date,
+            status: "Pending"
         }
-
-        this.setState({
-            id: newTodo.id,
-            title: newTodo.title,
-            desc: newTodo.desc,
-            date: newTodo.date
-        });
-
-        console.log(this.state)
-    }
+        if ( newTodo.title != '' ) {
+            this.props.handleSubmit(newTodo);
+        }        
+    };
 
     render() {
         return (
@@ -54,7 +50,10 @@ class TodoInput extends Component {
                                         type="text" 
                                         name="title" 
                                         placeholder="Enter a Title..." 
-                                        onChange={ this.onChange }/>
+                                        onChange={ this.onChange }
+                                        required 
+                                        aria-required='true'
+                                    />
                                 </FormGroup>
                             </Col>
                             <Col md={6}>
@@ -65,6 +64,8 @@ class TodoInput extends Component {
                                         name="date"
                                         placeholder="date placeholder"
                                         onChange={ this.onChange }
+                                        required 
+                                        aria-required='true'
                                     />
                                 </FormGroup>
                             </Col>
@@ -75,7 +76,10 @@ class TodoInput extends Component {
                                 type="textarea" 
                                 name="desc" 
                                 placeholder="Enter a description..." 
-                                onChange={ this.onChange }/>
+                                onChange={ this.onChange }
+                                required 
+                                aria-required='true'
+                            />
                         </FormGroup>
                         <Button>Add Todo</Button>
                     </Form>
