@@ -17,6 +17,10 @@ Build a To Do list type web application or API that meets challenge requirements
 - Make it simple for the user to track the status of multiple items as well as remember when things are due
 - Must work on a desktop web browser
 
+## Setup
+
+- Fork and clone
+- Run `npm install` to install dependencies
 
 ## Instructions
 
