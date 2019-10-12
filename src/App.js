@@ -15,8 +15,8 @@ class App extends Component {
     state = {
         todos: [
             { id: uuid(), title: "Running", desc: "run 1000km", date: "Oct-20-2019", status: 'Pending' },
-            { id: uuid(), title: "this a test fam", desc: "abc0", date: "Oct-20-2019", status: 'Pending' },
-            { id: uuid(), title: "testing1", desc: "ddd1", date: "Oct-30-2019", status: 'Pending' }
+            { id: uuid(), title: "This is just a test fam", desc: "Testing", date: "Oct-20-2019", status: 'Pending' },
+            { id: uuid(), title: "Submit this challenge", desc: "finish this todo app", date: "Oct-11-2019", status: 'Pending' }
         ]
     }
 
