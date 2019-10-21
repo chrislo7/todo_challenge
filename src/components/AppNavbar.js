@@ -13,7 +13,7 @@ class AppNavbar extends Component {
         return ( 
             <div>
                 <Navbar color="dark" dark className="fixed-top mb-5">
-                    <NavbarBrand href="/" className="mr-auto">NorthOne Todo</NavbarBrand>
+                    <NavbarBrand href="/" className="mr-auto">Todo App</NavbarBrand>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
                             <NavLink href="https://www.github.com/chrislo7/">GitHub</NavLink>

@@ -23,6 +23,15 @@ Build a To Do list type web application or API that meets challenge requirements
 - Run `npm install` to install dependencies
 - Run `npm start` to start app
 
+## Explanation 
+
+I've created a very simple and vanilla todo list app.
+The input area checks all areas are filled in.
+Clear button can clear ALL todos.
+Can change todos to completed or pending.
+
+Due to time constraints I couldn't implement other features such as filtering and sorting.
+
 ## Things remaining to do 
 
 - Split functions away in a seperate file
