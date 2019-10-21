@@ -34,6 +34,7 @@ Due to time constraints I couldn't implement other features such as filtering an
 
 ## Things remaining to do 
 
+- Better State Management with Redux
 - Split functions away in a seperate file
 - Split individual todo items away from 'TodoList.js'
 - Clean up code
